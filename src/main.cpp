@@ -1,9 +1,3 @@
-/**
- * Blink
- *
- * Turns on an LED on for one second,
- * then off for one second, repeatedly.
- */
 #include <TeensyThreads.h>
 
 #include "Arduino.h"
@@ -17,6 +11,7 @@
 
 static const int DEFAULT_STACK_SIZE = 128;
 
+// Prototypes for thread body functions
 static void t1_thread_func(void* arg);
 static void t2_thread_func(void* arg);
 
